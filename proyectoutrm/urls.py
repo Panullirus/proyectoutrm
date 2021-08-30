@@ -15,10 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from ejercicio import views
+from ventas import views
 
 urlpatterns = [
     path('', views.home,name="home"),
-    path('createpassword/',views.create_password,name='password'),
-    path('nuevapagina/',views.nueva,name="nueva"),
 ]
